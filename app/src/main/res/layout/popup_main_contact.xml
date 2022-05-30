@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:text="긴급구호자 등록"
+        android:textColor="@color/black"
+        android:textSize="18sp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="긴급구호자 이름과 연락처를 입력 해주세요."
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="10dp" />
+
+    <EditText
+        android:id="@+id/eTxt_mainPopup_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_stroke_all_corner_edittext"
+        android:hint="이름을 입력 해주세요."
+        android:padding="10dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="10dp" />
+
+    <EditText
+        android:id="@+id/eTxt_mainPopup_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_stroke_all_corner_edittext"
+        android:hint="휴대전화번호를 입력 해주세요."
+        android:inputType="number"
+        android:maxLength="12"
+        android:padding="10dp" />
+
+    <View
+        android:layout_width="1dp"
+        android:layout_height="10dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_mainPopup_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_stroke_all_corner_bt_2"
+            android:text="취소" />
+
+        <View
+            android:layout_width="10dp"
+            android:layout_height="1dp" />
+
+        <Button
+            android:id="@+id/btn_mainPopup_submit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/background_stroke_all_corner_bt"
+            android:text="확인"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

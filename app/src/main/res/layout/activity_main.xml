@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color_gray"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            style="@style/Top_bar"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/bg_head"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/tv_mainActivity_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="right"
+                    android:padding="10dp"
+                    android:textColor="@color/white"
+                    tools:ignore="RtlHardcoded" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.6"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <ImageButton
+                            android:id="@+id/btn_mainActivity_info"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:drawablePadding="5dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_info"
+                            android:textColor="@color/white" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="20dp" />
+
+                        <ImageButton
+                            android:id="@+id/btn_mainActivity_setting"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:drawablePadding="5dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_setting"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <ImageButton
+                            android:id="@+id/btn_mainActivity_version"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:drawablePadding="5dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_update"
+                            android:textColor="@color/white" />
+
+                        <View
+                            android:layout_width="1dp"
+                            android:layout_height="20dp" />
+
+                        <ImageButton
+                            android:id="@+id/btn_mainActivity_push"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@color/transparent"
+                            android:drawablePadding="5dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/ic_push"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.1" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingTop="10dp">
+
+                    <ImageView
+                        android:visibility="gone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.8"
+                        android:layout_gravity="center"
+                        android:background="@color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/main_logo" />
+
+                    <View
+                        android:visibility="gone"
+                        android:layout_width="1dp"
+                        android:layout_height="0dp"
+                        android:layout_weight="0.1" />
+
+                    <ImageButton
+                        android:id="@+id/btn_mainActivity_add"
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:layout_gravity="center"
+                        android:background="@color/transparent"
+                        android:scaleType="centerInside"
+                        android:src="@drawable/btn_add_phone_number" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="0.2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:lines="2"
+            android:padding="10dp"
+            android:text="테스트 문자는 제일 상단에 있는 대표전화번호로만 발송됩니다." />
+
+        <Button
+            android:id="@+id/btn_mainActivity_sendSms"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_stroke_all_corner_bt"
+            android:padding="10dp"
+            android:text="테스트 문자 발송"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <kr.chanven.commonpulltorefresh.PtrClassicFrameLayout xmlns:cube_ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/pcf_mainActivity_frame"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f0f0f0"
+            android:divider="@color/transparent"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp"
+            cube_ptr:ptr_duration_to_close="200"
+            cube_ptr:ptr_duration_to_close_header="700"
+            cube_ptr:ptr_keep_header_when_refresh="true"
+            cube_ptr:ptr_pull_to_fresh="false"
+            cube_ptr:ptr_ratio_of_header_height_to_refresh="1.2"
+            cube_ptr:ptr_resistance="1.8">
+
+            <ListView
+                android:id="@+id/lv_mainActivity_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/transparent"
+                android:dividerHeight="10dp"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:scrollbars="none"
+                android:smoothScrollbar="true" />
+        </kr.chanven.commonpulltorefresh.PtrClassicFrameLayout>
+
+        <TextView
+            android:id="@+id/tv_mainActivity_noData"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="등록된 긴급구호자가 없습니다."
+            android:textColor="@color/font_color_gray"
+            android:textSize="18sp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</LinearLayout>

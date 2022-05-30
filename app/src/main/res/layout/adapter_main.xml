@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_vertical"
+    android:layout_margin="10dp"
+    android:background="@drawable/background_stroke_all_corner_bt_3"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingStart="15dp"
+    android:paddingLeft="15dp"
+    android:paddingTop="15dp"
+    android:paddingEnd="15dp"
+    android:paddingRight="15dp"
+    android:paddingBottom="15dp">
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/tv_mainAdapter_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="대표"
+        android:textColor="@color/white"
+        android:padding="5dp"
+        android:background="@drawable/background_stroke_all_corner_bt" />
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:id="@+id/tv_mainAdapter_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.4"
+        android:textColor="@color/black"
+        android:textSize="17dp"
+        android:textStyle="bold" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="1dp" />
+
+    <TextView
+        android:id="@+id/tv_mainAdapter_phone"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_weight="0.6"
+        android:textColor="#343434"
+        android:textSize="14dp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="1"
+        android:visibility="gone" />
+
+    <View
+        android:layout_width="10dp"
+        android:layout_height="1dp" />
+
+    <ImageButton
+        android:id="@+id/btn_mainAdapter_update"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:src="@drawable/btn_update"
+        android:text="삭제" />
+
+    <View
+        android:layout_width="5dp"
+        android:layout_height="1dp" />
+
+    <ImageButton
+        android:id="@+id/btn_mainAdapter_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:src="@drawable/btn_del"
+        android:text="삭제" />
+
+</LinearLayout>

@@ -1,0 +1,51 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "kr.co.korea.danbukmyeon.help"
+        minSdkVersion 19
+        targetSdkVersion 30
+        versionCode 10
+        versionName "1.0.10(10)"
+        multiDexEnabled true
+    }
+    buildTypes {
+        debug {
+            shrinkResources false
+            // 프로가드 활성화
+            minifyEnabled true
+            // 기본 프로가드 설정
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            // 프로젝트에 필요한 프로가드 설정
+            proguardFile 'proguard-rules.pro'
+        }
+
+        release {
+            shrinkResources false
+            // 프로가드 활성화
+            minifyEnabled true
+            // 기본 프로가드 설정
+            proguardFile getDefaultProguardFile('proguard-android.txt')
+            // 프로젝트에 필요한 프로가드 설정
+            proguardFile 'proguard-rules.pro'
+        }
+
+    }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+    ndkVersion '21.0.6113669'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+
+    implementation project(':commonPullToRefresh_Lib')
+
+    implementation 'com.lahm.library:easy-protector-release:1.1.2'
+}

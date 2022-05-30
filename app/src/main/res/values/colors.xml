@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#60B242</color>
+    <color name="colorPrimaryDark">#60B242</color>
+    <color name="colorAccent">#60B242</color>
+
+    <color name="color_app">#60B242</color>
+    <color name="color_app_btn">#60B242</color>
+    <color name="color_version">#60B242</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="black">#000000</color>
+    <color name="white">#ffffff</color>
+    <color name="red">#ff0000</color>
+    <color name="blue">#0000ff</color>
+
+    <color name="background_color_login">#f8fafb</color>
+    <color name="background_color_main">#f8fafb</color>
+    <color name="background_color_edittext">#f0f0f0</color>
+    <color name="background_color_gray">#f0f0f0</color>
+    <color name="line_color_gray">#c8c8c8</color>
+    <color name="line_color_gray_login">#999999</color>
+    <color name="font_color_gray">#c8c8c8</color>
+    <color name="font_color_login">#252631</color>
+    <color name="font_color_login_or">#999999</color>
+    <color name="font_color_register">#252631</color>
+
+    <color name="font_color_wall_content">#98a9bc</color>
+    <color name="font_color_wall_sub">#778ca2</color>
+</resources>

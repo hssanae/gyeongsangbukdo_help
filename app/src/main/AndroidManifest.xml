@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="kr.co.korea.danbukmyeon.help">
+
+    <!-- 문자보내기 -->
+    <uses-permission android:name="android.permission.SEND_SMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <!-- 알람 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NOTIFICATION_POLICY" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <!-- 죽지않는 서비스 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+
+    <!-- 현재 내 위치 -->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="false"
+        android:icon="@mipmap/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning"
+        tools:targetApi="m">
+        <activity
+            android:name="kr.co.korea.danbukmyeon.help.LoadingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="kr.co.korea.danbukmyeon.help.MainActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity="" />
+
+        <activity
+            android:name="kr.co.korea.danbukmyeon.help.SettingActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="kr.co.korea.danbukmyeon.help.InfoActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="kr.co.korea.danbukmyeon.help.AlarmSetActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:screenOrientation="portrait"
+            android:taskAffinity=""
+            tools:ignore="Instantiatable" />
+
+        <activity
+            android:name="kr.co.korea.danbukmyeon.help.RemoveActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:excludeFromRecents="true"
+            android:launchMode="singleInstance"
+            android:parentActivityName="kr.co.korea.danbukmyeon.help.AlarmReceiver"
+            android:screenOrientation="portrait"
+            android:taskAffinity="">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="kr.co.korea.danbukmyeon.help.AlarmReceiver" />
+            <intent-filter>
+                <action android:name="AlarmRemove" />
+            </intent-filter>
+        </activity>
+
+        <service android:name="kr.co.korea.danbukmyeon.help.UndeadService" />
+
+        <receiver android:name="kr.co.korea.danbukmyeon.help.AlarmReceiver" />
+
+        <receiver
+            android:name="kr.co.korea.danbukmyeon.help.UndeadReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+
+    </application>
+
+</manifest>
