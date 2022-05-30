@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name" translatable="false">사랑해 孝 안심서비스</string>
+    <string name="app_name" translatable="false">마음안심서비스</string>
 
     <string name="contentDescription_icon" translatable="false">icon</string>
     <string name="contentDescription_button" translatable="false">button</string>

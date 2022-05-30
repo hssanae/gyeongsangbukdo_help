@@ -1,4 +1,4 @@
-package kr.co.korea.danbukmyeon.help;
+package kr.co.korea.gyeongsangbukdo.help;
 
 import android.annotation.SuppressLint;
 import android.app.Activity;
@@ -30,7 +30,7 @@ import java.util.Date;
 import java.util.HashMap;
 import java.util.Locale;
 
-import static kr.co.korea.danbukmyeon.help.AlarmSetActivity.context;
+import static kr.co.korea.gyeongsangbukdo.help.AlarmSetActivity.context;
 
 
 public class RemoveActivity extends BasicActivity {

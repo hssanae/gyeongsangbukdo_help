@@ -1,7 +1,7 @@
-package kr.co.korea.danbukmyeon.help;
+package kr.co.korea.gyeongsangbukdo.help;
 
 public class StringsClass {
-    public final static String PREF_NAME 		        = "kr.co.korea.danbukmyeon.help";
+    public final static String PREF_NAME 		        = "kr.co.korea.gyeongsangbukdo.help";
 
     public final static String PREF_USER_NAME	        = "user_name";
     public final static String PREF_USER_PHONE	        = "user_phone";

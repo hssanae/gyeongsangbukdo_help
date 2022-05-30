@@ -1,4 +1,4 @@
-package kr.co.korea.danbukmyeon.help;
+package kr.co.korea.gyeongsangbukdo.help;
 
 import android.app.Activity;
 import android.app.AlertDialog;

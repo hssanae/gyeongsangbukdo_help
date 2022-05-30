@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#60B242</color>
-    <color name="colorPrimaryDark">#60B242</color>
-    <color name="colorAccent">#60B242</color>
+    <color name="colorPrimary">#0bc6b2</color>
+    <color name="colorPrimaryDark">#0bc6b2</color>
+    <color name="colorAccent">#0bc6b2</color>
 
-    <color name="color_app">#60B242</color>
-    <color name="color_app_btn">#60B242</color>
-    <color name="color_version">#60B242</color>
+    <color name="color_app">#0bc6b2</color>
+    <color name="color_app_btn">#0bc6b2</color>
+    <color name="color_version">#0bc6b2</color>
 
     <color name="transparent">#00000000</color>
     <color name="black">#000000</color>

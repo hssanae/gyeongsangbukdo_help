@@ -1,4 +1,4 @@
-package kr.co.korea.danbukmyeon.help;
+package kr.co.korea.gyeongsangbukdo.help;
 
 import android.content.ContentValues;
 import android.content.Context;
@@ -11,7 +11,7 @@ import java.util.HashMap;
 
 public class DbHandler extends SQLiteOpenHelper {
     private static final int DB_VERSION = 1;
-    private static final String DB_NAME = "kr.co.korea.danbukmyeon.help";
+    private static final String DB_NAME = "kr.co.korea.gyeongsangbukdo.help";
     private static final String TABLE_Users = "contacts";
     private static final String KEY_ID = "id";
     private static final String KEY_NAME = "name";

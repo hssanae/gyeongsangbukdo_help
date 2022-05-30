@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="kr.co.korea.danbukmyeon.help">
+    package="kr.co.korea.gyeongsangbukdo.help">
 
     <!-- 문자보내기 -->
     <uses-permission android:name="android.permission.SEND_SMS" />
@@ -33,7 +33,7 @@
         tools:ignore="GoogleAppIndexingWarning"
         tools:targetApi="m">
         <activity
-            android:name="kr.co.korea.danbukmyeon.help.LoadingActivity"
+            android:name="kr.co.korea.gyeongsangbukdo.help.LoadingActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait">
             <intent-filter>
@@ -45,7 +45,7 @@
         </activity>
 
         <activity
-            android:name="kr.co.korea.danbukmyeon.help.MainActivity"
+            android:name="kr.co.korea.gyeongsangbukdo.help.MainActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
@@ -53,17 +53,17 @@
             android:taskAffinity="" />
 
         <activity
-            android:name="kr.co.korea.danbukmyeon.help.SettingActivity"
+            android:name="kr.co.korea.gyeongsangbukdo.help.SettingActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="kr.co.korea.danbukmyeon.help.InfoActivity"
+            android:name="kr.co.korea.gyeongsangbukdo.help.InfoActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:screenOrientation="portrait" />
 
         <activity
-            android:name="kr.co.korea.danbukmyeon.help.AlarmSetActivity"
+            android:name="kr.co.korea.gyeongsangbukdo.help.AlarmSetActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
@@ -72,27 +72,27 @@
             tools:ignore="Instantiatable" />
 
         <activity
-            android:name="kr.co.korea.danbukmyeon.help.RemoveActivity"
+            android:name="kr.co.korea.gyeongsangbukdo.help.RemoveActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:excludeFromRecents="true"
             android:launchMode="singleInstance"
-            android:parentActivityName="kr.co.korea.danbukmyeon.help.AlarmReceiver"
+            android:parentActivityName="kr.co.korea.gyeongsangbukdo.help.AlarmReceiver"
             android:screenOrientation="portrait"
             android:taskAffinity="">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="kr.co.korea.danbukmyeon.help.AlarmReceiver" />
+                android:value="kr.co.korea.gyeongsangbukdo.help.AlarmReceiver" />
             <intent-filter>
                 <action android:name="AlarmRemove" />
             </intent-filter>
         </activity>
 
-        <service android:name="kr.co.korea.danbukmyeon.help.UndeadService" />
+        <service android:name="kr.co.korea.gyeongsangbukdo.help.UndeadService" />
 
-        <receiver android:name="kr.co.korea.danbukmyeon.help.AlarmReceiver" />
+        <receiver android:name="kr.co.korea.gyeongsangbukdo.help.AlarmReceiver" />
 
         <receiver
-            android:name="kr.co.korea.danbukmyeon.help.UndeadReceiver"
+            android:name="kr.co.korea.gyeongsangbukdo.help.UndeadReceiver"
             android:enabled="true"
             android:exported="false">
             <intent-filter>
